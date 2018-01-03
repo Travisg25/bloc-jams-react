@@ -87,8 +87,6 @@ class Album extends Component {
     this.setState({ currentTime: newTime });
   }
 
-
-
   render() {
     return (
       <section className= 'album'>
