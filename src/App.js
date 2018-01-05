@@ -12,7 +12,9 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>Bloc Jams</h1>
+          
+          <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo"/>
+
           <nav>
             <Link to = '/'>Landing</Link>
             <Link to = '/library'>Library</Link>
