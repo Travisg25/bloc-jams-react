@@ -12,18 +12,17 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          
           <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo"/>
 
-          <nav>
-            <Link to = '/'>Landing</Link>
-            <Link to = '/library'>Library</Link>
+          <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+            <Link className="nav-link"  to = '/'>Home</Link>
+            <Link className="nav-link"  to = '/library'>Library</Link>
           </nav>
         </header>
         <main>
-        <Route exact path = '/' component= {Landing} />
-        <Route path='/library' component= {Library} />
-        <Route path='/album/:slug' component= {Album} />
+          <Route exact path = '/' component= {Landing} />
+          <Route path='/library' component= {Library} />
+          <Route path='/album/:slug' component= {Album} />
 
         </main>
       </div>

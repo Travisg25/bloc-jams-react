@@ -1,0 +1,14 @@
+.holding-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:10px;
+  background-color: lightblue;
+}
+
+section h1 {
+  background-color: lightgreen;
+}
+
+section h2 {
+  background-color: rgb(217, 101, 101);
+}
