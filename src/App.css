@@ -1,6 +1,6 @@
 .App {
+  background-color: #000000;
   text-align: center;
-
 }
 
 .App-logo {
@@ -31,6 +31,15 @@
 .App-header, nav {
 
 }
+
+.Nav-bar {
+  background-color: #D0D0D0;
+  height: 50px;
+  padding-top: 25px;
+  text-align: left;
+}
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
