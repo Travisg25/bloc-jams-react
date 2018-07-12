@@ -5,14 +5,13 @@ import './../styles/landing.css'
 const Landing = () => (
 <section className='holding-container'>
 
-<div className="title">
-  <h1 className="hero-title">Turn it to up!</h1>
-  <img src="./public/assets/images/Death_to_Stock_Photography_DJ6.jpg" alt="holding disk" />
-</div>
+  <div className="title">
+    <h1 className="hero-title">Turn it to up!</h1>
+    <img src="./public/assets/images/Death_to_Stock_Photography_DJ6.jpg" alt="holding disk" />
+  </div>
 
   <section className='library container-fluid'>
     <h1 className="display-2">Turn the music up!</h1>
-
    <section className="selling-points">
 
    <section className= ''>
