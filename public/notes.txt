@@ -1,0 +1,4 @@
+1.  Color palette, font choice, font sizing.
+2.  Spacing, margina and padding
+3.  New Bg colors
+4.  Layout.
