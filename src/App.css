@@ -1,47 +1,136 @@
-.App {
-  background-color: #000000;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+* {
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a {
+  text-decoration: none;
+}
+
+/* Keyframes */
+
+@keyframes slide {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+
+nav {
+  display: flex;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  height: 100%;
+}
+
+nav a {
+  color: #D5F7F0;
+  line-height: 2.7rem;
+  font-size:1.9rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+nav a:hover {
+  color: #f50057;
+}
+
+body {
+  background: #212121;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  height: 9rem;
+  background: #1C0A1E;
 }
 
+@media screen and (max-width: 800px) {
+  .banner-img {
+    height: 320px;
+    object-fit: cover;
+  }
 
-/* .App-title {
-  font-size: 1.5em;
-} */
+  .hero-title {
+    font-size: 240%;
+  }
 
-.App-intro {
-  font-size: large;
+  .point {
+    min-width: 300px;
+    padding: 5rem 0 0 0;
+  }
 }
 
-.App-header, img {
-  margin-bottom: 20px;
+@media screen and (max-width: 440px) {
+  .library {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .album-link {
+    padding: 0;
+    margin: 0.5rem auto;
+  }
+
+  .album-link img {
+    width: 100vw;
+  }
 }
 
-.App-header, nav {
+@media screen and (max-width: 1650px) {
 
-}
+  .album {
+    margin-bottom: 10rem;
+    width: 100%;
+    overflow: auto;
+    white-space: normal;
+    text-align: center;
+  }
 
-.Nav-bar {
-  background-color: #D0D0D0;
-  height: 50px;
-  padding-top: 25px;
-  text-align: left;
-}
+  .song-list-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
 
+  .player-bar {
+    animation: 1s ease-out 0s 1 slide;
+    height: 9rem;
+  }
 
+  .player-icon {
+    margin: 0 1rem;
+  }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  .seek-bar {
+    width: 16rem;
+  }
+
+  #album-cover-art {
+    padding: 1rem 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #album-info {
+    padding: 1rem 0;
+    margin: auto;
+  }
+
+  #song-list {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    #volume-control {
+      display: none;
+    }
+  }
 }

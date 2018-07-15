@@ -1,14 +1,50 @@
-.holding-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding:10px;
-  background-color: lightblue;
+
+.landing {
+  background-color: #1C0A1E;
 }
 
-section h1 {
-  /* background-color: lightgreen; */
+.logo {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  padding: 1rem;
+  height: 7rem;
+  left: 0;
 }
 
-section h2 {
-  /* background-color: rgb(217, 101, 101); */
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 5rem;
+  color: #f50057;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.selling-points {
+  color: #D5F7F0;
+  text-align: center;
+}
+
+.icon {
+  font-size: 6rem;
+  color: #f50057;
+}
+
+.point {
+  display: inline-block;
+  width: 30%;
+  padding: 5rem;
 }

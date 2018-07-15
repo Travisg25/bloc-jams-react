@@ -1,3 +1,106 @@
-h1 {
-  
+.artist,
+#release-info {
+  color: #bdbdbd;
+  font-weight: 400;
+  margin: 0.5rem;
+}
+
+#album-info {
+  display: inline-block;
+  width: fit-content;
+  padding: 5rem 5rem 0 5rem;
+}
+
+#album-cover-art {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#album-title {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+#song-list {
+  color: #fff;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.album {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.album-info {
+  width: 25%;
+}
+
+.album-details {
+  color: #fff;
+  text-align: center;
+}
+
+.invisible {
+  display: none;
+}
+
+.song {
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+.song .ion-play {
+  display: none;
+}
+
+.song .ion-pause {
+  vertical-align: -0.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.song:hover {
+  background: #c51162;
+}
+
+.song:hover .song-number {
+  display: none;
+}
+
+.song:hover .ion-play {
+  vertical-align: -0.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: inline;
+}
+
+.song-actions {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.song-duration {
+  width: 3rem;
+}
+
+.song-list-container {
+  display: inline-block;
+  width: 65%;
+  margin: auto;
+  padding: 5rem;
+  vertical-align: top;
+}
+
+button {
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+button:focus {
+  outline: none;
 }

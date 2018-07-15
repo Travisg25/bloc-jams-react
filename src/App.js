@@ -11,24 +11,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <span className='library-nav'>
-            <Link className="nav-link"  to = '/'>Home</Link>
-          </span>
-          <span className='library-nav'>
-            <Link className="nav-link"  to = '/library'>Library</Link>
-          </span>
-          <span className='logoNav'>
-            <img src='./public/assets/images/bloc_jams_logo.png' alt='bloc Jams Logo'/>
-          </span>
+        <header className='App-header'>
+          <nav>
+            <Link to='/'><img className="logo" src='/assets/images/DigiRockLogo2.png' alt="Digi Rock Logo" style={{ textDecoration: 'none' }} /></Link>
+            <Link  to = '/library'>Library</Link>
           </nav>
         </header>
         <main>
           <Route exact path = '/' component= {Landing} />
           <Route path='/library' component= {Library} />
           <Route path='/album/:slug' component= {Album} />
-
         </main>
       </div>
     );
