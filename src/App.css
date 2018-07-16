@@ -49,40 +49,6 @@ body {
   background: #1C0A1E;
 }
 
-@media screen and (max-width: 800px) {
-  .banner-img {
-    height: 320px;
-    object-fit: cover;
-  }
-
-  .hero-title {
-    font-size: 240%;
-  }
-
-  .point {
-    min-width: 300px;
-    padding: 5rem 0 0 0;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .library {
-    max-width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .album-link {
-    padding: 0;
-    margin: 0.5rem auto;
-  }
-
-  .album-link img {
-    width: 100vw;
-  }
-}
-
 @media screen and (max-width: 1650px) {
 
   .album {
@@ -128,9 +94,43 @@ body {
     width: 100%;
   }
 
-  @media screen and (max-width: 800px) {
-    #volume-control {
-      display: none;
-    }
+}
+
+@media screen and (max-width: 800px) {
+  #volume-control {
+    display: none;
+  }
+
+  .banner-img {
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .point {
+    min-width: 300px;
+    padding: 5rem 0 0 0;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+  .library {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .album-link {
+    padding: 0;
+    margin: 0.5rem auto;
+  }
+
+  .album-link img {
+    width: 100vw;
   }
 }
