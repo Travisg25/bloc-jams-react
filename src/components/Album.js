@@ -119,6 +119,8 @@ class Album extends Component {
             <div id="release-info">{this.state.album.releaseInfo}</div>
           </div>
         </section>
+        <div className="song-list-container">
+
         <table id="song-list">
           <colgroup>
             <col id="song-number-column" />
@@ -131,17 +133,16 @@ class Album extends Component {
                 <td className="song-actions">
                   <button>
                     <span className={this.state.currentSong === song && this.state.isPlaying? 'ion-pause' : 'ion-play'}></span>
-
                   </button>
                 </td>
                 <td className="song-number">{index+1}</td>
-
                 <td className="song-title">{song.title}</td>
                 <td className="song-duration">{this.formatTime(parseInt(song.duration))}</td>
               </tr>
             )}
           </tbody>
         </table>
+        </div>
       <PlayerBar
         isPLaying={this.state.isPlaying}
         currentSong={this.state.currentSong}
@@ -154,8 +155,6 @@ class Album extends Component {
         handleNextClick={() => this.handleNextClick()}
         handleTimeChange={(e) => this.handleTimeChange(e)}
         handleSetVolume={(e) => this.handleSetVolume(e)}
-
-
         />
      </section>
     );

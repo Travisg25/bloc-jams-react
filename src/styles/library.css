@@ -27,6 +27,7 @@
 
 .album-link img {
   width: 20rem;
+  margin-right: 2rem;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;

@@ -28,14 +28,17 @@
   color: #fff;
   border-collapse: collapse;
   width: 80%;
+  margin: 0 auto;
 }
 
 .album {
+  background-color: #1C0A1E;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .album-info {
+  background-color: yellow;
   width: 25%;
 }
 
@@ -63,13 +66,13 @@
   cursor: pointer;
 }
 
-.song:hover {
+/* .song:hover {
   background: #c51162;
 }
 
 .song:hover .song-number {
   display: none;
-}
+} */
 
 .song:hover .ion-play {
   vertical-align: -0.2rem;
@@ -88,11 +91,13 @@
 }
 
 .song-list-container {
-  display: inline-block;
+  /* display: inline-block; */
   width: 65%;
-  margin: auto;
+  margin: 0 auto;
   padding: 5rem;
+  text-align: center;
   vertical-align: top;
+  margin-bottom: 7rem;
 }
 
 button {
